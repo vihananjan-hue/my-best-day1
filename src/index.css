@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer utilities {
+  .house-aravali {
+    --house-color: #ef4444;
+  }
+  .house-nilgiri {
+    --house-color: #3b82f6;
+  }
+  .house-shivalik {
+    --house-color: #10b981;
+  }
+  .house-udaygiri {
+    --house-color: #f59e0b;
+  }
+}
+
+/* Custom timer pulse glow animation */
+@keyframes timerPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.animate-timer-warning {
+  animation: timerPulse 1s infinite ease-in-out;
+}
+
